@@ -15,8 +15,3 @@ Start client application (for development):
 ```
 $ npm run start
 ```
-
-Create build for production:
-```
-$ npm run build
-```
