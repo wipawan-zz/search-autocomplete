@@ -11,22 +11,22 @@ describe('actions', () => {
     store.clearActions();
   });
 
-  it('dispatches correct query when input changes', () => {
+  test('dispatches correct query when input changes', () => {
     store.dispatch(Actions.changeQuery('test'));
     expect(store.getActions()).toMatchSnapshot();
   });
 
-  it('dispatches correct action.type to fetch repositories', () => {
+  test('dispatches correct action.type to fetch repositories', () => {
     store.dispatch(Actions.fetchRepos());
     expect(store.getActions()).toMatchSnapshot();
   });
 
-  it('dispatches correct action.type to clear search input', () => {
+  test('dispatches correct action.type to clear search input', () => {
     store.dispatch(Actions.clearSearch());
     expect(store.getActions()).toMatchSnapshot();
   });
 
-  it('dispatches correct item when item is selected', () => {
+  test('dispatches correct item when item is selected', () => {
     store.dispatch(Actions.selectItem({
       "name": "test"
     }));

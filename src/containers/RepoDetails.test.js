@@ -12,7 +12,7 @@ const store = mockStore(stateMock);
 
 describe('<RepoDetails />', () => {
   describe('render()', () => {
-    it('renders the component', () => {
+    test('renders the component', () => {
       const wrapper = shallow(<RepoDetails store={store} />);
       const component = wrapper.dive();
 
