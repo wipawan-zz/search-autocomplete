@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers change query returns correct query 1`] = `
+Object {
+  "error": null,
+  "query": "q",
+  "results": Array [],
+  "selectedItem": null,
+}
+`;
+
+exports[`reducers clear autocomplete empties results array in the store 1`] = `
+Object {
+  "error": null,
+  "query": "",
+  "results": Array [],
+  "selectedItem": null,
+}
+`;
+
+exports[`reducers fetch repos success updates results after successfully fetch repos 1`] = `
+Object {
+  "error": null,
+  "query": "",
+  "results": Array [
+    "dummy_items",
+  ],
+  "selectedItem": null,
+}
+`;
+
+exports[`reducers initialState is correct 1`] = `
+Object {
+  "error": null,
+  "query": "",
+  "results": Array [],
+  "selectedItem": null,
+}
+`;
+
+exports[`reducers select item select an item 1`] = `
+Object {
+  "error": null,
+  "query": "",
+  "results": Array [],
+  "selectedItem": Object {
+    "item": "dummyItem",
+  },
+}
+`;
