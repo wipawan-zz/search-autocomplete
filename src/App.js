@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <h1 className="app-title">Github Repositories Search</h1>
+        <h1 className="app-title">Github Repository Search</h1>
         <div className="app-container">
           <SearchBar />
           <RepoDetails />
