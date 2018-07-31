@@ -1,0 +1,54 @@
+.search-container {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  text-indent: 1em;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 0.5em;
+  outline: none;
+}
+
+.search-input:focus {
+  border: 1px solid rgb(114, 114, 114);
+}
+
+
+.search-autocomplete {
+  /* opacity: 0; */
+  visibility: hidden;
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.search-autocomplete-item {
+  width: 100%;
+  font-size: 14px;
+  line-height: 2em;
+  text-indent: 1em;
+}
+
+.search-autocomplete-item:hover {
+  background-color: rgb(224, 224, 224);
+}
