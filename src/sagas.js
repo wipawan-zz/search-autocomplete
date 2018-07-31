@@ -1,7 +1,7 @@
 import { takeLatest, all, call, put, select } from 'redux-saga/effects';
 import axios from 'axios';
 
-const ACCESS_TOKEN = 'Token e98eba92004b9aa63c5cf7f37e75649c0e92b3c9';
+const ACCESS_TOKEN = 'Token PERSONAL_ACCESS_TOKEN';
 axios.defaults.headers.common['Authorization'] = ACCESS_TOKEN;
 
 export default function* rootSaga() {

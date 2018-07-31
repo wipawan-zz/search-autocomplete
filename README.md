@@ -11,6 +11,8 @@ Install the dependencies:
 $ npm install
 ```
 
+Replace "PERSONAL_ACCESS_TOKEN" with the token generated from https://github.com/settings/tokens/new
+
 Start client application (for development):
 ```
 $ npm run start
