@@ -1,6 +1,6 @@
 # Github Repository Search
 
-live: https://wipawan.github.io/repo-search
+live: https://repo-search-autocomplete.herokuapp.com/
 
 This git repository contains all necessary files and resources of this project. The application is implemented using the following tools:
 - React (create-react-app)
