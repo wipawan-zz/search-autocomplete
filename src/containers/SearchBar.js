@@ -21,7 +21,7 @@ class SearchBar extends Component {
     this.state = {
       q: "",
       show: {
-        opacity: "1"
+        visibility: "visible"
       }
     };
   }
@@ -61,7 +61,7 @@ class SearchBar extends Component {
     return (
       <div className="search-container">
         <div className="search-bar">
-          <input none
+          <input
             className="search-input"
             placeholder="Type your search query"
             type="text"
