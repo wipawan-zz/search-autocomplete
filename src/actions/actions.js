@@ -1,8 +1,8 @@
 // action types
-const CHANGE_QUERY = "CHANGE_QUERY";
-const FETCH_REPOS = "FETCH_REPOS";
-const CLEAR_AUTOCOMPLETE = 'CLEAR_AUTOCOMPLETE';
-const SELECT_ITEM = 'SELECT_ITEM';
+export const CHANGE_QUERY = "CHANGE_QUERY";
+export const FETCH_REPOS = "FETCH_REPOS";
+export const CLEAR_AUTOCOMPLETE = 'CLEAR_AUTOCOMPLETE';
+export const SELECT_ITEM = 'SELECT_ITEM';
 
 export function changeQuery(query) {
   return {
