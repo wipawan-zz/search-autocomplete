@@ -21,7 +21,7 @@ class SearchBar extends Component {
     this.state = {
       q: "",
       show: {
-        visibility: "visible"
+        visibility: "hidden"
       }
     };
   }
@@ -52,6 +52,14 @@ class SearchBar extends Component {
     });
   }
 
+  onFocus = () => {
+    this.setState({
+      show: {
+        visibility: "visible"
+      }
+    });
+  }
+
   render() {
     const {
       results,
@@ -68,10 +76,11 @@ class SearchBar extends Component {
             value={this.state.q}
             onChange={this.onChangeQuery}
             onBlur={this.onBlur}
+            onFocus={this.onFocus}
           />
           <FontAwesomeIcon style={searchIcon} icon="search" />
         </div>
-        <ul className="search-autocomplete" style={results.length > 0 ? this.state.show : {}}>
+        <ul className="search-autocomplete" style={results.length > 0 ? this.state.show : { visibility: "hidden" }}>
         {
           results.map((item, index) => <li className="search-autocomplete-item" key={index} onMouseDown={() => selectItem(item)}>{item.full_name}</li>)
         }
