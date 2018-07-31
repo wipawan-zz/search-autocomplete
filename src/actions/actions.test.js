@@ -12,52 +12,24 @@ describe('actions', () => {
   });
 
   it('dispatches correct query when input changes', () => {
-    const expectedAction = [
-      {
-        type: Actions.CHANGE_QUERY,
-        query: 'test'
-      }
-    ];
-
     store.dispatch(Actions.changeQuery('test'));
-    expect(store.getActions()).toEqual(expectedAction);
+    expect(store.getActions()).toMatchSnapshot();
   });
 
   it('dispatches correct action.type to fetch repositories', () => {
-    const expectedAction = [
-      {
-        type: Actions.FETCH_REPOS
-      }
-    ];
-
     store.dispatch(Actions.fetchRepos());
-    expect(store.getActions()).toEqual(expectedAction);
+    expect(store.getActions()).toMatchSnapshot();
   });
 
   it('dispatches correct action.type to clear search input', () => {
-    const expectedAction = [
-      {
-        type: Actions.CLEAR_AUTOCOMPLETE
-      }
-    ];
-
     store.dispatch(Actions.clearSearch());
-    expect(store.getActions()).toEqual(expectedAction);
+    expect(store.getActions()).toMatchSnapshot();
   });
 
   it('dispatches correct item when item is selected', () => {
-    const expectedAction = [
-      {
-        type: Actions.SELECT_ITEM,
-        selectedItem: {
-          "name": "test"
-        }
-      }
-    ];
-
     store.dispatch(Actions.selectItem({
       "name": "test"
     }));
-    expect(store.getActions()).toEqual(expectedAction);
+    expect(store.getActions()).toMatchSnapshot();
   });
 });

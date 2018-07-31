@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions dispatches correct action.type to clear search input 1`] = `
+Array [
+  Object {
+    "type": "CLEAR_AUTOCOMPLETE",
+  },
+]
+`;
+
+exports[`actions dispatches correct action.type to fetch repositories 1`] = `
+Array [
+  Object {
+    "type": "FETCH_REPOS",
+  },
+]
+`;
+
+exports[`actions dispatches correct item when item is selected 1`] = `
+Array [
+  Object {
+    "selectedItem": Object {
+      "name": "test",
+    },
+    "type": "SELECT_ITEM",
+  },
+]
+`;
+
+exports[`actions dispatches correct query when input changes 1`] = `
+Array [
+  Object {
+    "query": "test",
+    "type": "CHANGE_QUERY",
+  },
+]
+`;
